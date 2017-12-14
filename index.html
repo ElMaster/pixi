@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.2/pixi.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+<div id="element"></div>
+<div class="container">
+    <div class="container-left">
+        <div class="main-container-left">
+            <div class="number-input-area">
+                <p>Площадь</p>
+                <div class="stepper-widget" id="AreaDrawRect">
+                    <input type="text" class="js-qty-input form-control" value="50" />
+                    <button type="button" class="btn js-qty-down btn btn-primary">-</button>
+                    <button type="button" class="btn js-qty-up btn btn-danger">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-left">
+        <div class="main-container-left">
+            <p>Количесво</p>
+            <div class="stepper-widget" id="MaxFigures">
+                <input type="text" class="js-qty-input form-control" value="10" />
+                <button type="button" class="js-qty-down btn btn-primary">-</button>
+                <button type="button" class="js-qty-up btn btn-danger">+</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/stepper.widget.js"></script>
+<script src="js/core.js"></script>
+<script>
+    $(document).on('ready', function(){
+        $('.stepper-widget').stepper({
+            step: 10
+        });
+    });
+    </script>
+</body>
+</html>

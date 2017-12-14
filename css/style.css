@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 0px;
+    background: #f1f1f1;
+}
+#element {
+    max-width: 800px;
+    height: 600px;
+    margin: 100px auto 20px;
+}
+.container {
+    max-width: 800px;
+    padding: 20px 0;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.container-left {
+    float: left;
+    width: 50%;
+}
+.main-container-left {
+    padding: 0 10px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+/*canvas {*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*z-index: -9999;*/
+    /*image-rendering: optimizeSpeed;*/
+    /*image-rendering: -moz-crisp-edges;*/
+    /*image-rendering: -webkit-optimize-contrast;*/
+    /*image-rendering: optimize-contrast;*/
+    /*-ms-interpolation-mode: nearest-neighbor;*/
+/*}*/
+/*
+  Fix box-sizing for easier layout styling
+*/
+*,*:before,*:after{box-sizing:border-box}
+
+
+
+
+/* To pretify things */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    margin: .25em 0;
+}
+
+a {
+    width: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    color: #222;
+    padding: 1em 1.5em;
+    border-radius: 0.15em;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+    text-decoration: none;
+    position: relative;
+}
+a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+li.has-child:not(.is-active):not(.has-active-child) > a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: .5em;
+    width: .5em;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 50%;
+    right: 1.5em;
+    margin-top: -0.5em;
+}
+
+li.has-active-child > a {
+    color: #fff;
+}
+li.has-active-child > a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: .5em;
+    width: .5em;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 50%;
+    right: 1.5em;
+    margin-top: -0.15em;
+}
+
+li li.is-active > a {
+    color: #fff;
+}
+li li.is-active > a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: .8em;
+    width: .34em;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 50%;
+    right: 1.5em;
+    margin-top: -0.6em;
+}
+
+.has-active-child > a {
+    color: #fff;
+    background-color: rgba(0, 128, 0, 0.5);
+}
+.has-active-child > a:hover {
+    background-color: rgba(0, 128, 0, 0.7);
+}
+
+.is-active > a {
+    color: #fff;
+    background-color: green;
+    cursor: default;
+}
+
+/* serious fluff */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: .9em;
+}
+
+* {
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+code {
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+p {
+    margin: 0 0 5px;
+    
+    font-family: Arial;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+.form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #c12e2a;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #025aa5;
+    border-color: #01549b;
+}
